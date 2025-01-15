@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio verse</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="container box">
+        <div class="music">
+          <!--Music player-->
+
+          <div class="music-player">
+            <!--Header-->
+            <div class="header">
+              <i class="fa-solid fa-music" id="size"></i>
+              <h2 id="size">Now playing</h2>
+              <i class="fas fa-bars" id="size"></i>
+            </div>
+            <!--Songs details-->
+            <div class="details">
+              <img class="track-image" src="./images/KGF.jpg" />
+              <p class="title" id="song-title">Song title</p>
+              <p class="title" id="artist">Artist Name</p>
+            </div>
+            <!--Player Controls-->
+            <div class="control">
+              <div class="song-timer">
+                <span class="current-time" id="song-duration">0:12</span>
+                <span class="duration-time" id="song-duration">4:10</span>
+              </div>
+              <!--Song Duration-->
+              <div class="duration">
+                <input
+                  type="range"
+                  class="duration-timer"
+                  min="0"
+                  max="100"
+                  value="0"
+                />
+              </div>
+              <!--Buttons - Play,Next and Pre-->
+              <div class="buttons">
+                <button class="prev" id="size2">
+                  <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="play" id="size2">
+                  <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="next" id="size2">
+                  <i class="fas fa-step-forward"></i>
+                </button>
+              </div>
+              <!--Autoplay-->
+              <button class="play-all">
+                Play all <i class="fas fa-sync-alt"></i>
+              </button>
+              <!--Volume-->
+              <div class="volume">
+                <p id="show-volume">50</p>
+                <i class="fas fa-volume-mute" id="volume-icon"></i>
+                <input type="range" id="volume" min="0" max="100" value="50" />
+              </div>
+            </div>
+          </div>
+
+          <!--Playlist-->
+          <div class="music-playlist">
+            <!--Header-->
+            <div class="header playlist-header">
+              <i class="fa-solid fa-music"></i>
+              <h2>Playlist</h2>
+              <i class="fas fa-times" id="cross"></i>
+            </div>
+            <!--Playlist Items-->
+            <div class="playlist-div">
+              <!-- <div class="playlist">
+                <span class="song-index">1</span>
+                <p class="single-song">Song one</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="music.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
